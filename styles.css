@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1em;
+  background-color: rgb(43, 43, 43);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: 95%;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #ddda85, #205dcf);
+  background-color: rgb(118, 153, 247);
+}
+
+input {
+  padding: 10px;
+  border-radius: 25px;
+  width: 70%;
+  background-color: rgb(228, 226, 226);
+  outline: none;
+  border: none;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+#search-btn {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: rgb(228, 226, 226);
+  align-self: center;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-items: center;
+  margin-right: 20px;
+}
+
+#temperature {
+  font-size: 60px;
+}
+
+#city {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.humidity-container,
+.windspeed-container {
+  display: grid;
+  grid-template-columns: 4em 1fr;
+}
+
+#bottom-icon {
+  width: 50px;
+  height: 100%;
+}
+
+#humidity-pic,
+#windspeed-pic {
+  margin-right: 10px;
+}
+
+#humidity-percent,
+#windspeed-amount {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#windspeed-para,
+#humidity-para {
+  font-weight: 100;
+}
+
+#humidity-text,
+#windspeed-text {
+  height: 100%;
+}

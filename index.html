@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="search-bar">
+          <input
+            type="text"
+            id="city-search"
+            placeholder="Search your city here..."
+          />
+          <button id="search-btn">
+            <img src="/assets/magnifying-glass-solid-full.svg" alt="" />
+          </button>
+        </div>
+        <div class="main-content">
+          <img src="#" alt="" />
+          <h1 id="temperature">70&deg;F</h1>
+          <h2 id="city">Charlotte</h2>
+        </div>
+        <div class="bottom-content">
+          <div class="humidity-container">
+            <div class="humidity-pic">
+              <img src="/assets/humid.svg" id="bottom-icon" alt="" />
+            </div>
+            <div class="humidity-text">
+              <p id="humidity-percent">50%</p>
+              <p id="humidity-para">Humidity</p>
+            </div>
+          </div>
+          <div class="windspeed-container">
+            <div class="windspeed-pic">
+              <img src="/assets/wind-solid-full.svg" id="bottom-icon" alt="" />
+            </div>
+            <div class="windspeed-text">
+              <p id="windspeed-amount">15 m/h</p>
+              <p id="windspeed-para">Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
